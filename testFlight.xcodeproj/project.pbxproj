@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D68340F2B39891000F85C45 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D68340E2B39891000F85C45 /* MainViewController.swift */; };
+		8D8F44152B398C8600CD4DFE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8D8F44142B398C8600CD4DFE /* SnapKit */; };
 		8D9346A42B385A0000B776AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9346A32B385A0000B776AD /* AppDelegate.swift */; };
 		8D9346A62B385A0000B776AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9346A52B385A0000B776AD /* SceneDelegate.swift */; };
 		8D9346A82B385A0000B776AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9346A72B385A0000B776AD /* ViewController.swift */; };
@@ -46,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D68340E2B39891000F85C45 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8D9346A02B385A0000B776AD /* testFlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testFlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9346A32B385A0000B776AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D9346A52B385A0000B776AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D8F44152B398C8600CD4DFE /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +133,7 @@
 				8D9346D52B3868F400B776AD /* BaseView.swift */,
 				8D9346D72B38697300B776AD /* Constants.swift */,
 				8D9346DB2B386A6900B776AD /* Extension */,
+				8D68340E2B39891000F85C45 /* MainViewController.swift */,
 			);
 			path = testFlight;
 			sourceTree = "<group>";
@@ -189,6 +194,9 @@
 			dependencies = (
 			);
 			name = testFlight;
+			packageProductDependencies = (
+				8D8F44142B398C8600CD4DFE /* SnapKit */,
+			);
 			productName = testFlight;
 			productReference = 8D9346A02B385A0000B776AD /* testFlight.app */;
 			productType = "com.apple.product-type.application";
@@ -261,6 +269,9 @@
 				Base,
 			);
 			mainGroup = 8D9346972B385A0000B776AD;
+			packageReferences = (
+				8D8F44132B398C8600CD4DFE /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 8D9346A12B385A0000B776AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -311,6 +322,7 @@
 				8D9346D62B3868F400B776AD /* BaseView.swift in Sources */,
 				8D9346DA2B386A1F00B776AD /* NSLayoutConstraint.swift in Sources */,
 				8D9346A42B385A0000B776AD /* AppDelegate.swift in Sources */,
+				8D68340F2B39891000F85C45 /* MainViewController.swift in Sources */,
 				8D9346A62B385A0000B776AD /* SceneDelegate.swift in Sources */,
 				8D9346E52B3873CB00B776AD /* UIFont.swift in Sources */,
 				8D9346E72B3876B900B776AD /* UIColor.swift in Sources */,
@@ -661,6 +673,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D8F44132B398C8600CD4DFE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D8F44142B398C8600CD4DFE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D8F44132B398C8600CD4DFE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8D9346982B385A0000B776AD /* Project object */;
 }

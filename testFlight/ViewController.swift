@@ -2,23 +2,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BaseController: UIViewController {
     
     var loadingView: LoadingView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         createLoadingView()
-        
-        showLoading()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) { [weak self] in
-            guard let self = self else { return }
-            self.hideLoading()
-        }
     }
 }
  
-extension ViewController {
+extension BaseController {
     func createLoadingView() {
         loadingView = LoadingView.instantiate()
         loadingView.layer.zPosition = 2

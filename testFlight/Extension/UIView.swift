@@ -59,6 +59,11 @@ extension UIView {
         return top
     }
     
+    func embedViews(_ view: UIView) {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(view)
+    }
+    
     func border(width: CGFloat = 0, color: UIColor? = nil, radius: CGFloat = 0) {
         self.layer.borderColor = color?.cgColor
         self.layer.borderWidth = width
