@@ -33,6 +33,5 @@ class BaseView: UIView, NibLoadableView {
     }
     
     func modeDidChange() {}
-    
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D3949112B39F67F005BF331 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3949102B39F67F005BF331 /* UIButton.swift */; };
+		8D3949132B39FE4D005BF331 /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3949122B39FE4C005BF331 /* RateViewController.swift */; };
 		8D68340F2B39891000F85C45 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D68340E2B39891000F85C45 /* MainViewController.swift */; };
 		8D8F44152B398C8600CD4DFE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8D8F44142B398C8600CD4DFE /* SnapKit */; };
 		8D9346A42B385A0000B776AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9346A32B385A0000B776AD /* AppDelegate.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D3949102B39F67F005BF331 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		8D3949122B39FE4C005BF331 /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
 		8D68340E2B39891000F85C45 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8D9346A02B385A0000B776AD /* testFlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testFlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9346A32B385A0000B776AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D39490D2B39F48F005BF331 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D68340E2B39891000F85C45 /* MainViewController.swift */,
+				8D39490E2B39F49F005BF331 /* BaseView */,
+				8D9346E82B3878CA00B776AD /* LoadingView */,
+				8D3949122B39FE4C005BF331 /* RateViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D39490E2B39F49F005BF331 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				8D9346D52B3868F400B776AD /* BaseView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		8D39490F2B39F4C6005BF331 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D9346AC2B385A0200B776AD /* Assets.xcassets */,
+				8D9346AE2B385A0200B776AD /* LaunchScreen.storyboard */,
+				8D9346B12B385A0200B776AD /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		8D9346972B385A0000B776AD = {
 			isa = PBXGroup;
 			children = (
@@ -126,14 +159,9 @@
 				8D9346A32B385A0000B776AD /* AppDelegate.swift */,
 				8D9346A52B385A0000B776AD /* SceneDelegate.swift */,
 				8D9346A72B385A0000B776AD /* ViewController.swift */,
-				8D9346AC2B385A0200B776AD /* Assets.xcassets */,
-				8D9346AE2B385A0200B776AD /* LaunchScreen.storyboard */,
-				8D9346B12B385A0200B776AD /* Info.plist */,
-				8D9346E82B3878CA00B776AD /* LoadingView */,
-				8D9346D52B3868F400B776AD /* BaseView.swift */,
-				8D9346D72B38697300B776AD /* Constants.swift */,
+				8D39490F2B39F4C6005BF331 /* Supporting Files */,
+				8D39490D2B39F48F005BF331 /* View */,
 				8D9346DB2B386A6900B776AD /* Extension */,
-				8D68340E2B39891000F85C45 /* MainViewController.swift */,
 			);
 			path = testFlight;
 			sourceTree = "<group>";
@@ -158,6 +186,7 @@
 		8D9346DB2B386A6900B776AD /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8D9346D72B38697300B776AD /* Constants.swift */,
 				8D9346D92B386A1F00B776AD /* NSLayoutConstraint.swift */,
 				8D9346DC2B386A8100B776AD /* UIScreen.swift */,
 				8D9346DE2B386C3A00B776AD /* CGFloat.swift */,
@@ -165,6 +194,7 @@
 				8D9346E22B38733000B776AD /* UIView.swift */,
 				8D9346E42B3873CB00B776AD /* UIFont.swift */,
 				8D9346E62B3876B900B776AD /* UIColor.swift */,
+				8D3949102B39F67F005BF331 /* UIButton.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -320,6 +350,7 @@
 				8D9346E32B38733000B776AD /* UIView.swift in Sources */,
 				8D9346D42B3868C100B776AD /* LoadingView.swift in Sources */,
 				8D9346D62B3868F400B776AD /* BaseView.swift in Sources */,
+				8D3949112B39F67F005BF331 /* UIButton.swift in Sources */,
 				8D9346DA2B386A1F00B776AD /* NSLayoutConstraint.swift in Sources */,
 				8D9346A42B385A0000B776AD /* AppDelegate.swift in Sources */,
 				8D68340F2B39891000F85C45 /* MainViewController.swift in Sources */,
@@ -328,6 +359,7 @@
 				8D9346E72B3876B900B776AD /* UIColor.swift in Sources */,
 				8D9346D82B38697300B776AD /* Constants.swift in Sources */,
 				8D9346E12B386C7F00B776AD /* Double.swift in Sources */,
+				8D3949132B39FE4D005BF331 /* RateViewController.swift in Sources */,
 				8D9346DD2B386A8100B776AD /* UIScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,12 +536,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JPJ7C4PAL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = testFlight/Info.plist;
+				INFOPLIST_FILE = "testFlight/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,12 +567,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JPJ7C4PAL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = testFlight/Info.plist;
+				INFOPLIST_FILE = "testFlight/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

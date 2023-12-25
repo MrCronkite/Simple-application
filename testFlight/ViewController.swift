@@ -4,15 +4,19 @@ import UIKit
 
 class BaseController: UIViewController {
     
-    var loadingView: LoadingView!
+   private var loadingView: LoadingView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         createLoadingView()
+        
+        embedViews()
+        setupLayout()
+        setupAppearance()
     }
 }
  
-extension BaseController {
+@objc extension BaseController {
     func createLoadingView() {
         loadingView = LoadingView.instantiate()
         loadingView.layer.zPosition = 2
@@ -28,5 +32,14 @@ extension BaseController {
     func hideLoading() {
         loadingView.finish()
     }
+    
+    func embedViews() {}
+    
+    func setupLayout() {}
+    
+    func setupAppearance() {
+        view.backgroundColor = .activColor
+    }
 }
+
 

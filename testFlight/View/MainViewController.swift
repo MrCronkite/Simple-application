@@ -13,15 +13,15 @@ final class MainViewController: BaseController {
     private let alertSecondaryButton = UIButton()
     
     override func viewDidLoad() {
-        embedViews()
-        setupLayout()
-        setupAppearance()
+        super.viewDidLoad()
         setupData()
     }
 }
 
-private extension MainViewController {
-    func embedViews() {
+extension MainViewController {
+    override func embedViews() {
+        super.embedViews()
+        
         view.embedViews(alertView)
         
         alertView.embedViews(titleLabel)
@@ -30,7 +30,8 @@ private extension MainViewController {
         alertView.embedViews(alertSecondaryButton)
     }
     
-    func setupLayout() {
+  override func setupLayout() {
+      super.setupLayout()
         alertView.snp.makeConstraints { make in
             make.centerY.equalTo(view.snp_centerYWithinMargins).offset(0)
             make.leading.equalTo(view.snp.leadingMargin).offset(16)
@@ -65,7 +66,8 @@ private extension MainViewController {
         
     }
     
-    func setupAppearance() {
+    override func setupAppearance() {
+        super.setupAppearance()
         view.backgroundColor = .activColor
         
         alertView.backgroundColor = .white
@@ -94,14 +96,16 @@ private extension MainViewController {
         descriptionLabel.text = "Consequat velit qui adipisicing sunt do reprehenderit ad labotum tempor ullamco exercitation. Ullamco tempory adipisicing et voluptate duis sit esse aliqua esse ex dolore esse. Consequat velit aui adiprising sunt."
         
         alertButton.setTitle("Click me", for: .normal)
-        alertButton.addTarget(self, action: #selector(alertAction), for: .touchUpInside)
+        alertButton.addTarget(self, action: #selector(alertAction(_:)), for: .touchUpInside)
         alertSecondaryButton.setTitle("Secondary Action", for: .normal)
     }
 }
 
 @objc extension MainViewController {
-    func alertAction() {
-        print("hello")
+    func alertAction(_ sender: UIButton) {
+        sender.showAnimation {
+            print("hello")
+        }
     }
 }
 
